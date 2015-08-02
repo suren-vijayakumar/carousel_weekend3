@@ -1,9 +1,33 @@
+body{
+    background-color: teal;
+    font-family: fantasy;
+}
+
+.cohortDiv{
+background-color: teal;
+    text-align: center;
+
+}
+
+
 .indexNo {
-font-family: Arial;
-    color: aquamarine;
+
+    color: red;
 }
 
 .name {
-    font-size: large;
+
+    font-size: 50px;
+    color: gold;
+}
+
+.desc{
+    font-size: 30px;
+    color: gold;
+}
+
+.thanks{
+    font-size: 30px;
+
     color: gold;
 }

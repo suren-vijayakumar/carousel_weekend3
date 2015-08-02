@@ -65,11 +65,11 @@ var cohortAppend = function(myArray, i) {
     $(".cohortDiv").append("<div class='indexNo'></div>");
     $(".indexNo").append("<p>You are on Gamma cohort number " + k + "</p>");
     $(".cohortDiv").append("<div class='name'></div>");
-    $(".name").append("<p>Name: " + myArray[i].name + "</p>");
+    $(".name").append("<p> " + myArray[i].name + "</p>");
     $(".cohortDiv").append("<div class='desc'></div>");
-    $(".desc").append("<p>Decription: " + myArray[i].desc + "</p>");
+    $(".desc").append("<p> Says: " + myArray[i].desc + "</p>");
     $(".cohortDiv").append("<div class='thanks'></div>");
-    $(".thanks").append("<p>Shoutouts: " + myArray[i].thanks + "</p>");
+    $(".thanks").append("<p>Other's say: " + myArray[i].thanks + "</p>");
     $('.cohortDiv').append("<button class='prevButton'>Prev Button</button>");
     $('.cohortDiv').append("<button class='nextButton'>Next Button</button>");
 
