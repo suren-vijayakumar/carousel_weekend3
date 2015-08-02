@@ -114,8 +114,8 @@ $(document).ready(function(){
 
     $("body").on('click', '.prevButton', function() {
         console.log("prevButton clicked!");
-          i= parseInt(i);
-        if (i< parseInt(0)){
+          //i= parseInt(i);
+        if (i<=0){
             i=21;
             console.log("i= " + i);
             cohortAppend(gammaArray,i);
