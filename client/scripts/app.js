@@ -17,21 +17,6 @@
 //};
 
 
-var cohortAppend = function(myArray, i) {
-     var k = i+1; //cohort number starts at 0
-    ////$.each(person, function() {
-       $(".cohortDiv").children().remove();
-    $(".cohortDiv").append("<p>You are on Gamma cohort number " + k + "</p>");
-        $(".cohortDiv").append("<p>Name: " + myArray[i].name + "</p>");
-        $(".cohortDiv").append("<p>Decription: " + myArray[i].desc + "</p>");
-        $(".cohortDiv").append("<p>Shoutouts: " + myArray[i].thanks + "</p>");
-    $('.cohortDiv').append("<button class='prevButton'>Prev Button</button>");
-    $('.cohortDiv').append("<button class='nextButton'>Next Button</button>");
-    //nextButton(myArray,i);
-    //prevButton(myArray,i);
-
-
-};
 
 //var nextButton = function(gammaArray,i){
 //
@@ -73,7 +58,22 @@ var cohortAppend = function(myArray, i) {
 //    });
 //
 //};
+var cohortAppend = function(myArray, i) {
+    var k = i+1; //cohort number starts at 0
 
+    $(".cohortDiv").children().remove();
+    $(".cohortDiv").append("<div class='indexNo'></div>");
+    $(".indexNo").append("<p>You are on Gamma cohort number " + k + "</p>");
+    $(".cohortDiv").append("<div class='name'></div>");
+    $(".name").append("<p>Name: " + myArray[i].name + "</p>");
+    $(".cohortDiv").append("<div class='desc'></div>");
+    $(".desc").append("<p>Decription: " + myArray[i].desc + "</p>");
+    $(".cohortDiv").append("<div class='thanks'></div>");
+    $(".thanks").append("<p>Shoutouts: " + myArray[i].thanks + "</p>");
+    $('.cohortDiv').append("<button class='prevButton'>Prev Button</button>");
+    $('.cohortDiv').append("<button class='nextButton'>Next Button</button>");
+
+};
 
 
 $(document).ready(function(){
@@ -130,12 +130,6 @@ $(document).ready(function(){
 
 
     });
-    $('.arrow-next').click(function() {
-        var currentSlide = $('.active-slide');
-        var nextSlide = currentSlide.next();
 
-        currentSlide.fadeOut(600).removeClass('active-slide');
-        nextSlide.fadeIn(600).addClass('active-slide');
-    });
 
 });
