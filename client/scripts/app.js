@@ -18,9 +18,10 @@
 
 
 var cohortAppend = function(myArray, i) {
-
+     var k = i+1; //cohort number starts at 0
     ////$.each(person, function() {
        $(".cohortDiv").children().remove();
+    $(".cohortDiv").append("<p>You are on Gamma cohort number " + k + "</p>");
         $(".cohortDiv").append("<p>Name: " + myArray[i].name + "</p>");
         $(".cohortDiv").append("<p>Decription: " + myArray[i].desc + "</p>");
         $(".cohortDiv").append("<p>Shoutouts: " + myArray[i].thanks + "</p>");
