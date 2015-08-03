@@ -92,7 +92,7 @@ $(document).ready(function(){
     });
         $(".cohortDiv").append("<div class='portrait'></div>");
         $('.portrait').append("<p><img src=/views/Gamma.jpg alt'Gamma Cohort'/></p>");
-        $('.cohortDiv').prepend("<button class='nextButton btn btn-success btn-block'>Click this button to find out more about us!</button>");
+        $('.cohortDiv').prepend("<button class='nextButton btn btn-warning btn-block'>Click this button to find out more about us!</button>");
      //   $('.cohortDiv').prepend("<button class='prevButton btn btn-primary'>Prev Button</button>");
 
         //nextButton(gammaArray,i);
