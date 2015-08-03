@@ -69,9 +69,9 @@ var cohortAppend = function(myArray, i) {
     $(".cohortDiv").append("<div class='desc'></div>");
     $(".desc").append("<p> " + myArray[i].name + " says, " + myArray[i].desc + "</p>");
     $(".cohortDiv").append("<div class='thanks'></div>");
-    $(".thanks").append("<p>Other's say: " + myArray[i].thanks + "</p>");
-    $('.cohortDiv').append("<button class='prevButton btn btn-primary'>Prev Button</button>");
-    $('.cohortDiv').append("<button class='nextButton btn btn-success'>Next Button</button>");
+    $(".thanks").append("<p>Other's say, " + myArray[i].thanks + "</p>");
+    $('.cohortDiv').append("<button class='prevButton btn btn-warning btn-lg'>Prev Person</button>");
+    $('.cohortDiv').append("<button class='nextButton btn btn-success btn-lg '>Next Person</button>");
 };
 
 
@@ -92,7 +92,7 @@ $(document).ready(function(){
     });
         $(".cohortDiv").append("<div class='portrait'></div>");
         $('.portrait').append("<p><img src=/views/Gamma.jpg alt'Gamma Cohort'/></p>");
-        $('.cohortDiv').prepend("<button class='nextButton btn btn-success'>Next Button</button>");
+        $('.cohortDiv').prepend("<button class='nextButton btn btn-success btn-block'>Click this button to find out more about us!</button>");
      //   $('.cohortDiv').prepend("<button class='prevButton btn btn-primary'>Prev Button</button>");
 
         //nextButton(gammaArray,i);
